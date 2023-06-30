@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="styles/index.css" />
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/timer.js" defer></script>
 </head>
 <body>
 
@@ -20,15 +19,17 @@
 
     <div class="timer">
         <p id="timer">It has been 0 seconds</p>
+        <script src="scripts/timers/start-timer.js" defer></script>
     </div>
 </header>
 
 <section class="data-container">
     <div class="data">
         <img src="assets/favicon.png" class="data-icon" alt=" " />
-        <p>Every year, 262,980,000 hours of new content are uploaded on YouTube. This means that since opening this page, on average, people have created YouTube content worth: 0 minutes.
+        <p>Every minute, 500 hours of new content is uploaded on YouTube. Since opening this page, people have uploaded an average of:
         </p>
-        <h2>0 minutes</h2>
+        <h2 id="hour-upload-timer">0 hours</h2>
+        <script src="scripts/timers/hour-upload-timer.js" defer></script>
     </div>
 </section>
 
@@ -41,8 +42,9 @@
 <section class="data-container">
     <div class="data">
         <img src="assets/favicon.png" class="data-icon" alt=" " />
-        <p>Every day, YouTube is visited by 122 million visitors. Since you opened this page, YouTube has gained: 0 visitors.</p>
-        <h2>0 visitors</h2>
+        <p>Every day, there are about 3.7 million new videos posted to YouTube. Since you opened this page, YouTube had received:</p>
+        <h2 id="video-upload-timer">0 videos</h2>
+        <script src="scripts/timers/video-upload-timer.js" defer></script>
     </div>
 </section>
 
@@ -55,8 +57,9 @@
 <section class="data-container">
     <div class="data">
         <img src="assets/favicon.png" class="data-icon" alt=" " />
-        <p>Together, these visitors watch 5 billion videos a day. This means that since opening this page, on average, people have watched: 0 videos.</p>
-        <h2>0 videos</h2>
+        <p>Every day, YouTube is visited by 122 million unique visitors. Since you opened this page, YouTube had received:</p>
+        <h2 id="visitor-timer">0 visitors</h2>
+        <script src="scripts/timers/visitor-timer.js" defer></script>
     </div>
 </section>
 
@@ -69,8 +72,9 @@
 <section class="data-container">
     <div class="data">
         <img src="assets/favicon.png" class="data-icon" alt=" " />
-        <p>Every day, viewers around the world spend a total of 1 billion hours watching videos on YouTube. This means people have watched YouTube videos for: 0 hours.</p>
-        <h2>0 hours</h2>
+        <p>Every day, viewers around the world spend a total of 1 billion hours watching videos on YouTube. Since you opened this page, people have watched YouTube for:</p>
+        <h2 id="watchtime-timer">0 hours</h2>
+        <script src="scripts/timers/watchtime-timer.js" defer></script>
     </div>
 </section>
 
@@ -83,8 +87,9 @@
 <section class="data-container">
     <div class="data">
         <img src="assets/favicon.png" class="data-icon" alt=" " />
-        <p>You are not on YouTube. This means that since opening this page, on average, people have watched: 0 videos.</p>
-        <h2>0 videos</h2>
+        <p>You are not on YouTube right now, or maybe you are.. Perhaps you even watch on multiple devices? You are watching:</p>
+        <h2 id="random-timer">0 videos</h2>
+        <script src="scripts/timers/random-timer.js" defer></script>
     </div>
 </section>
 
