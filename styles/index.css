@@ -5,16 +5,34 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --background-color: #333;
+    --section-background: #555;
+    --text-color: #fff;
+}
+
+html[data-theme='light'] {
+    --background-color: #f1f2f6;
+    --section-background: #fff;
+    --text-color: #000;
+}
+
+html[data-theme='dark'] {
+    --background-color: #333;
+    --section-background: #555;
+    --text-color: #fff;
+}
+
 body,
 html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f1f2f6;
+    background-color: var(--background-color);
 }
 
 header .logo {
-    background-color: #fff;
+    background-color: var(--section-background);
     border-radius: 0.3rem;
     padding: 1rem;
     text-align: left;
@@ -30,7 +48,7 @@ header img{
 }
 
 header .timer {
-    background-color: #fff;
+    background-color: var(--section-background);
     border-radius: 0.3rem;
     padding: 1rem;
     text-align: left;
@@ -39,7 +57,7 @@ header .timer {
 }
 
 header p {
-    color: #000;
+    color: var(--text-color);
     font-size: 1.2rem;
     text-align: center;
     padding: 1rem;
@@ -49,7 +67,7 @@ header p {
 .data-container h2 {
     margin: 0.5em auto auto auto;
     width: 80%;
-    color: #000;
+    color: var(--text-color);
     font-size: 1.8rem;
     font-weight: normal;
     text-align: center;
@@ -59,14 +77,14 @@ header p {
 .data-container p {
     margin: 0.5em auto auto auto;
     width: 80%;
-    color: #000;
+    color: var(--text-color);
     font-size: 1.2rem;
     text-align: left;
     width: 65%;
 }
 
 .data-container .data {
-    background-color: #fff;
+    background-color: var(--section-background);
     border-radius: 0.3rem;
     padding: 1rem;
     text-align: left;
@@ -79,6 +97,7 @@ header p {
     height: 4.2rem;
     padding: 1.2rem;
     background-color: #f1f2f6;
+    border-radius: 50%;
     margin: 0.7rem;
     display: block;
     margin-left: auto;
@@ -88,7 +107,7 @@ header p {
 
 
 .point-container .wait {
-    background-color: #fff;
+    background-color: var(--section-background);
     border-radius: 0.3rem;
     padding: 1rem;
     text-align: left;
@@ -98,8 +117,9 @@ header p {
 
 .point-container p {
     width: 80%;
-    color: #000;
+    color: var(--text-color);
     font-size: 1.2rem;
     text-align: left;
     padding: 1rem;
 }
+

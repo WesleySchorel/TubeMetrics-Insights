@@ -5,7 +5,7 @@ function updateTimer() {
     var increment = 11574.07;
 
     var newCount = currentCount + increment;
-    var roundedCount = Math.floor(newCount); 
+    var roundedCount = Math.floor(newCount);
     timerElement.textContent = roundedCount + ' hours';
 }
 
