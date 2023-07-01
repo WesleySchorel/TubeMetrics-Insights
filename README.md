@@ -1,23 +1,23 @@
 # TubeMetrics-Insights
 A passion project in which I display interesting statistics from youtube on a small website.
 
-## 📦 Inhoud
-* Beschrijving
-* Gebruik
-* Kenmerken
-* Installatie
-* Bronnen
+## 📦 Contents
+* Description
+* Usage
+* Features
+* Installation
+* Sources
 
-## ℹ️ Beschrijving
+## ℹ️ Description
 N/A
 
-## 🖥️ Gebruik
+## 🖥️ Usage
 N/A
 
-## ✨ Kenmerken
-De technieken die in dit project worden gebruikt zijn HTML, CSS en JS
+## ✨ Features.
+The techniques used in this project are HTML, CSS and JS
 
-## 📥 Installatie
+## 📥 Installation
 N/A
 
 ## 🌍 Bronnen
