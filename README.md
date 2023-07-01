@@ -20,6 +20,6 @@ The techniques used in this project are HTML, CSS and JS
 ## 📥 Installation
 N/A
 
-## 🌍 Bronnen
+## 🌍 Sources
 * YouTube - https://www.youtube.com/
 
