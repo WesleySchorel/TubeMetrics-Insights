@@ -9,8 +9,7 @@
     --background-color: #333;
     --section-background: #555;
     --icon-background: #f1f2f6;
-    --button: #555;
-    --button-hover: #555;
+    --button: #3b3b3b;
     --text-color: #fff;
 }
 
@@ -18,8 +17,7 @@ html[data-theme='light'] {
     --background-color: #f0f0f0;
     --section-background: #fff;
     --icon-background: #f1f2f6;
-    --button: #fff;
-    --button-hover: #fff;
+    --button: #e5e5e5;
     --text-color: #000;
 }
 
@@ -27,8 +25,7 @@ html[data-theme='dark'] {
     --background-color: #333;
     --section-background: #555;
     --icon-background: #f1f2f6;
-    --button: #555;
-    --button-hover: #555;
+    --button: #3b3b3b;
     --text-color: #fff;
 }
 
@@ -55,6 +52,33 @@ header img{
     margin-left: auto;
     margin-right: auto;
 }
+
+header .external-links {
+    background-color: var(--section-background);
+    text-align: center;
+    margin: auto auto 1rem auto;
+    width: 50%;
+}
+
+header a {
+    background-color: var(--button);
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--text-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+header a:hover {
+    opacity: 0.6;
+    color: var(--text-color);
+  }
 
 header .timer {
     background-color: var(--section-background);
@@ -154,6 +178,33 @@ header p {
         margin-left: auto;
         margin-right: auto;
     }
+
+    header .external-links {
+        background-color: var(--section-background);
+        text-align: center;
+        margin: auto auto 1rem auto;
+        width: 50%;
+    }
+    
+    header a {
+        background-color: var(--button);
+        border: none;
+        border-radius: 0.3rem;
+        color: var(--text-color);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    
+    header a:hover {
+        opacity: 0.6;
+        color: var(--text-color);
+      }
     
     header .timer {
         background-color: var(--section-background);
