@@ -1,4 +1,4 @@
-// Function to format the time in a human-readable format
+// Function to format the time in a user-readable format
 function formatTime(elapsedTime) {
     var weeks = Math.floor(elapsedTime / (7 * 24 * 60 * 60));
     var days = Math.floor((elapsedTime % (7 * 24 * 60 * 60)) / (24 * 60 * 60));

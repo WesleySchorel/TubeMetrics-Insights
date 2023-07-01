@@ -8,18 +8,27 @@
 :root {
     --background-color: #333;
     --section-background: #555;
+    --icon-background: #f1f2f6;
+    --button: #555;
+    --button-hover: #555;
     --text-color: #fff;
 }
 
 html[data-theme='light'] {
-    --background-color: #f1f2f6;
+    --background-color: #f0f0f0;
     --section-background: #fff;
+    --icon-background: #f1f2f6;
+    --button: #fff;
+    --button-hover: #fff;
     --text-color: #000;
 }
 
 html[data-theme='dark'] {
     --background-color: #333;
     --section-background: #555;
+    --icon-background: #f1f2f6;
+    --button: #555;
+    --button-hover: #555;
     --text-color: #fff;
 }
 
@@ -31,7 +40,7 @@ html {
     background-color: var(--background-color);
 }
 
-header .logo {
+header .introduction {
     background-color: var(--section-background);
     border-radius: 0.3rem;
     padding: 1rem;
@@ -56,9 +65,14 @@ header .timer {
     width: 60%;
 }
 
+header h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.4rem;
+}
+
 header p {
     color: var(--text-color);
-    font-size: 1.2rem;
     text-align: center;
     padding: 1rem;
     font-size: 1.4rem;
@@ -93,12 +107,12 @@ header p {
 }
 
 .data-container .data-icon {
-    width: 4.2rem;
-    height: 4.2rem;
+    width: 4.6rem;
+    height: 4.6rem;
     padding: 1.2rem;
-    background-color: #f1f2f6;
+    background-color: var(--icon-background);
     border-radius: 50%;
-    margin: 0.7rem;
+    margin: 1.3rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -123,3 +137,102 @@ header p {
     padding: 1rem;
 }
 
+
+@media screen and (max-width: 780px) {
+    header .introduction {
+        background-color: var(--section-background);
+        border-radius: 0.3rem;
+        padding: 1rem;
+        text-align: left;
+        margin: 2rem auto 1rem auto;
+        width: 90%;
+    }
+    
+    header img{
+        width: 10rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header .timer {
+        background-color: var(--section-background);
+        border-radius: 0.3rem;
+        padding: 1rem;
+        text-align: left;
+        margin: auto auto 1rem auto;
+        width: 90%;
+    }
+    
+    header h1 {
+        color: var(--text-color);
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    header p {
+        color: var(--text-color);
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+    
+    .data-container h2 {
+        margin: 0.5em auto auto auto;
+        width: 90%;
+        color: var(--text-color);
+        font-size: 1.8rem;
+        font-weight: normal;
+        text-align: center;
+        padding: 1.6rem;
+    }
+    
+    .data-container p {
+        margin: 0.5em auto auto auto;
+        color: var(--text-color);
+        font-size: 1.2rem;
+        text-align: left;
+        width: 90%;
+    }
+    
+    .data-container .data {
+        background-color: var(--section-background);
+        border-radius: 0.3rem;
+        padding: 1rem;
+        text-align: left;
+        margin: auto auto 1rem auto;
+        width: 90%;
+    }
+    
+    .data-container .data-icon {
+        width: 4.6rem;
+        height: 4.6rem;
+        padding: 1.2rem;
+        background-color: #f1f2f6;
+        border-radius: 50%;
+        margin: 1.3rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+    .point-container .wait {
+        background-color: var(--section-background);
+        border-radius: 0.3rem;
+        padding: 1rem;
+        text-align: left;
+        margin: auto auto 1rem auto;
+        width: 90%;
+    }
+    
+    .point-container p {
+        width: 90%;
+        color: var(--text-color);
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 1rem;
+    }
+}
