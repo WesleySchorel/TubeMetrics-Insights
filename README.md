@@ -22,4 +22,5 @@ N/A
 
 ## 🌍 Sources
 * YouTube - https://www.youtube.com/
+* Icons - https://www.svgrepo.com/collection/minimal-ui-icons/
 
