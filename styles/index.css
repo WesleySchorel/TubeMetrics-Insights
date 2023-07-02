@@ -42,20 +42,26 @@ html {
 
 header {
     position: relative;
-    z-index: 2; /* Increase the z-index value */
+    z-index: 2; 
   }
+
+header .timer {
+    position: relative;
+    z-index: 2; 
+  }
+  
   
   .data-container {
     position: relative;
-    z-index: 2; /* Increase the z-index value */
+    z-index: 2;
   }
   
   .point-container {
     position: relative;
-    z-index: 2; /* Increase the z-index value */
+    z-index: 2; 
   }
 
-button {
+header button {
     background-color: var(--button);
     border: none;
     border-radius: 0.3rem;
@@ -65,15 +71,13 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    margin: 1rem auto auto 1rem;
     transition: 0.3s;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
+    position: relative;
 }
 
-button:hover {
+header button:hover {
     opacity: 0.6;
     color: var(--text-color);
 }
@@ -121,6 +125,11 @@ header a:hover {
     color: var(--text-color);
 }
 
+header .unavailable {
+  opacity: 0.6;
+  cursor: not-allowed;;
+}
+
 header .timer {
     background-color: var(--section-background);
     border-radius: 0.3rem;
@@ -158,7 +167,6 @@ header p {
 
 .data-container p {
     margin: 0.5em auto auto auto;
-    width: 80%;
     color: var(--text-color);
     font-size: 1.2rem;
     text-align: left;
@@ -191,8 +199,6 @@ header p {
     height: 2rem;
 }
 
-
-
 .point-container .wait {
     background-color: var(--section-background);
     border-radius: 0.3rem;
@@ -212,8 +218,6 @@ header p {
     text-align: left;
     padding: 1rem;
 }
-
-
 
 .background-icons {
     position: fixed;
@@ -343,158 +347,68 @@ header p {
     }
   }
 
+footer p {
+  margin: auto;
+  padding: 3rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+}
 
 @media screen and (max-width: 780px) {
-    button {
-        background-color: var(--button);
-        border: none;
-        border-radius: 0.3rem;
-        color: var(--text-color);
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        transition: 0.3s;
-        position: fixed;
-        top: 1rem;
-        left: 1rem;
-    }
-    
-    button:hover {
-        opacity: 1;
-        color: var(--text-color);
-    }
+header button {
+  left: 0;
+  top: 0;
+}
 
-    header .introduction {
-        background-color: var(--section-background);
-        border-radius: 0.3rem;
-        padding: 1rem;
-        text-align: left;
-        margin: 2rem auto 1rem auto;
-        width: 90%;
-    }
+header .introduction {
+    width: 90%;
+}
 
-    header img {
-        width: 10rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+header img {
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    header .external-links {
-        background-color: var(--section-background);
-        text-align: center;
-        margin: auto auto 1rem auto;
-        width: 50%;
-    }
+header .external-links {
+    width: 90%;
+}
 
-    header a {
-        background-color: var(--button);
-        border: none;
-        border-radius: 0.3rem;
-        color: var(--text-color);
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+header a {
+    display: block;
+}
 
-    header a:hover {
-        opacity: 0.6;
-        color: var(--text-color);
-    }
+header .timer {
+    width: 90%;
+}
 
-    header .timer {
-        background-color: var(--section-background);
-        border-radius: 0.3rem;
-        padding: 1rem;
-        text-align: left;
-        margin: auto auto 1rem auto;
-        width: 90%;
-    }
+header h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.8rem;
+}
 
-    header h1 {
-        color: var(--text-color);
-        text-align: center;
-        font-size: 1.8rem;
-    }
+.data-container h2 {
+    width: 90%;
+}
 
-    header p {
-        color: var(--text-color);
-        font-size: 1.2rem;
-        text-align: center;
-        padding: 1rem;
-        font-size: 1.4rem;
-    }
+.data-container p {
+    width: 90%;
+}
 
-    .data-container h2 {
-        margin: 0.5em auto auto auto;
-        width: 90%;
-        color: var(--text-color);
-        font-size: 1.8rem;
-        font-weight: normal;
-        text-align: center;
-        padding: 1.6rem;
-    }
+.data-container .data {
+    width: 90%;
+}
 
-    .data-container p {
-        margin: 0.5em auto auto auto;
-        color: var(--text-color);
-        font-size: 1.2rem;
-        text-align: left;
-        width: 90%;
-    }
+.point-container .wait {
+    width: 90%;
+}
 
-    .data-container .data {
-        background-color: var(--section-background);
-        border-radius: 0.3rem;
-        padding: 1rem;
-        text-align: left;
-        margin: auto auto 1rem auto;
-        width: 90%;
-    }
-
-    .data-container .data-icon {
-        width: 4.6rem;
-        height: 4.6rem;
-        padding: 1.2rem;
-        background-color: var(--icon-background);
-        border-radius: 50rem;
-        margin: 1.3rem auto 1.3rem auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .data-container .data-icon img {
-        width: 2rem;
-        height: 2rem;
-    }
-
-
-
-    .point-container .wait {
-        background-color: var(--section-background);
-        border-radius: 0.3rem;
-        padding: 1rem;
-        text-align: left;
-        margin: auto auto 1rem auto;
-        width: 90%;
-    }
-
-    .point-container p {
-        width: 90%;
-        color: var(--text-color);
-        font-size: 1.2rem;
-        text-align: left;
-        padding: 1rem;
-    }
+.point-container p {
+    width: 90%;
+}
 }
 
