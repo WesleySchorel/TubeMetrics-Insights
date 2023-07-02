@@ -190,6 +190,29 @@ header p {
 }
 
 @media screen and (max-width: 780px) {
+    button {
+        background-color: var(--button);
+        border: none;
+        border-radius: 0.3rem;
+        color: var(--text-color);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: 0.3s;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    button:hover {
+        opacity: 1;
+        color: var(--text-color);
+    }
+
     header .introduction {
         background-color: var(--section-background);
         border-radius: 0.3rem;
@@ -287,12 +310,17 @@ header p {
         width: 4.6rem;
         height: 4.6rem;
         padding: 1.2rem;
-        background-color: #f1f2f6;
+        background-color: var(--icon-background);
         border-radius: 50%;
-        margin: 1.3rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 1.3rem auto 1.3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .data-container .data-icon img {
+        width: 2rem;
+        height: 2rem;
     }
 
 
