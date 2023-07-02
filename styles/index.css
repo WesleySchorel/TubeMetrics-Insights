@@ -37,16 +37,39 @@ html {
     background-color: var(--background-color);
 }
 
+button {
+    background-color: var(--button);
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--text-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+button:hover {
+    opacity: 0.6;
+    color: var(--text-color);
+}
+
 header .introduction {
     background-color: var(--section-background);
     border-radius: 0.3rem;
     padding: 1rem;
     text-align: left;
-    margin: 2rem auto 1rem auto;
+    margin: 1rem auto 1rem auto;
     width: 60%;
 }
 
-header img{
+header img {
     width: 10rem;
     display: block;
     margin-left: auto;
@@ -73,12 +96,12 @@ header a {
     margin: 4px 2px;
     cursor: pointer;
     transition: 0.3s;
-  }
+}
 
 header a:hover {
     opacity: 0.6;
     color: var(--text-color);
-  }
+}
 
 header .timer {
     background-color: var(--section-background);
@@ -136,10 +159,15 @@ header p {
     padding: 1.2rem;
     background-color: var(--icon-background);
     border-radius: 50%;
-    margin: 1.3rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1.3rem auto 1.3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-container .data-icon img {
+    width: 2rem;
+    height: 2rem;
 }
 
 
@@ -161,7 +189,6 @@ header p {
     padding: 1rem;
 }
 
-
 @media screen and (max-width: 780px) {
     header .introduction {
         background-color: var(--section-background);
@@ -171,8 +198,8 @@ header p {
         margin: 2rem auto 1rem auto;
         width: 90%;
     }
-    
-    header img{
+
+    header img {
         width: 10rem;
         display: block;
         margin-left: auto;
@@ -185,7 +212,7 @@ header p {
         margin: auto auto 1rem auto;
         width: 50%;
     }
-    
+
     header a {
         background-color: var(--button);
         border: none;
@@ -199,13 +226,13 @@ header p {
         margin: 4px 2px;
         cursor: pointer;
         transition: 0.3s;
-      }
-    
+    }
+
     header a:hover {
         opacity: 0.6;
         color: var(--text-color);
-      }
-    
+    }
+
     header .timer {
         background-color: var(--section-background);
         border-radius: 0.3rem;
@@ -214,7 +241,7 @@ header p {
         margin: auto auto 1rem auto;
         width: 90%;
     }
-    
+
     header h1 {
         color: var(--text-color);
         text-align: center;
@@ -228,7 +255,7 @@ header p {
         padding: 1rem;
         font-size: 1.4rem;
     }
-    
+
     .data-container h2 {
         margin: 0.5em auto auto auto;
         width: 90%;
@@ -238,7 +265,7 @@ header p {
         text-align: center;
         padding: 1.6rem;
     }
-    
+
     .data-container p {
         margin: 0.5em auto auto auto;
         color: var(--text-color);
@@ -246,7 +273,7 @@ header p {
         text-align: left;
         width: 90%;
     }
-    
+
     .data-container .data {
         background-color: var(--section-background);
         border-radius: 0.3rem;
@@ -255,7 +282,7 @@ header p {
         margin: auto auto 1rem auto;
         width: 90%;
     }
-    
+
     .data-container .data-icon {
         width: 4.6rem;
         height: 4.6rem;
@@ -267,9 +294,9 @@ header p {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    
-    
+
+
+
     .point-container .wait {
         background-color: var(--section-background);
         border-radius: 0.3rem;
@@ -278,7 +305,7 @@ header p {
         margin: auto auto 1rem auto;
         width: 90%;
     }
-    
+
     .point-container p {
         width: 90%;
         color: var(--text-color);
