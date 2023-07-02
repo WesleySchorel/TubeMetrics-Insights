@@ -9,6 +9,7 @@
     --background-color: #333;
     --section-background: #555;
     --icon-background: #f1f2f6;
+    --border-color: #ff0000;
     --button: #3b3b3b;
     --text-color: #fff;
 }
@@ -17,6 +18,7 @@ html[data-theme='light'] {
     --background-color: #f0f0f0;
     --section-background: #fff;
     --icon-background: #f1f2f6;
+    --border-color: #ff0000;
     --button: #e5e5e5;
     --text-color: #000;
 }
@@ -25,6 +27,7 @@ html[data-theme='dark'] {
     --background-color: #333;
     --section-background: #555;
     --icon-background: #f1f2f6;
+    --border-color: #ff0000;
     --button: #3b3b3b;
     --text-color: #fff;
 }
@@ -36,6 +39,21 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background-color);
 }
+
+header {
+    position: relative;
+    z-index: 2; /* Increase the z-index value */
+  }
+  
+  .data-container {
+    position: relative;
+    z-index: 2; /* Increase the z-index value */
+  }
+  
+  .point-container {
+    position: relative;
+    z-index: 2; /* Increase the z-index value */
+  }
 
 button {
     background-color: var(--button);
@@ -110,6 +128,9 @@ header .timer {
     text-align: left;
     margin: auto auto 1rem auto;
     width: 60%;
+    border-style: none none none solid;
+    border-width: 0.3rem;
+    border-color: var(--border-color);
 }
 
 header h1 {
@@ -158,7 +179,7 @@ header p {
     height: 4.6rem;
     padding: 1.2rem;
     background-color: var(--icon-background);
-    border-radius: 50%;
+    border-radius: 50rem;
     margin: 1.3rem auto 1.3rem auto;
     display: flex;
     justify-content: center;
@@ -179,6 +200,9 @@ header p {
     text-align: left;
     margin: auto auto 1rem auto;
     width: 60%;
+    border-style: none none none solid;
+    border-width: 0.3rem;
+    border-color: var(--border-color);
 }
 
 .point-container p {
@@ -188,6 +212,137 @@ header p {
     text-align: left;
     padding: 1rem;
 }
+
+
+
+.background-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .background-icons li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    bottom: 60px;
+    -webkit-animation: square 25s infinite;
+    animation: square 25s infinite;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    opacity:0;
+  }
+  
+  .background-icons li:nth-child(1) {
+    left: 4%;
+    background:transparent;
+  }
+  .background-icons li:nth-child(2) {
+    left: 11%;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-duration: 17s;
+            animation-duration: 17s;
+  }
+  .background-icons li:nth-child(3) {
+    left: 16%;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  .background-icons li:nth-child(4) {
+    left: 39%;
+    -webkit-animation-duration: 22s;
+            animation-duration: 22s;
+  }
+  .background-icons li:nth-child(5) {
+    left: 72%;
+    background:transparent;
+  }
+  .background-icons li:nth-child(6) {
+    left: 88%;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    background:transparent;
+  }
+  .background-icons li:nth-child(7) {
+    left: 34%;
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+    background:transparent;
+  }
+  .background-icons li:nth-child(8) {
+    left: 56%;
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+    -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+  }
+  .background-icons li:nth-child(9) {
+    left: 31%;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+    background:transparent;
+  }
+  .background-icons li:nth-child(10) {
+    left: 90%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation-delay: 11s;
+            animation-delay: 11s;
+  }
+  .background-icons li:nth-child(11) {
+    left: 10%;
+    -webkit-animation-delay: 13s;
+            animation-delay: 13s;
+  }
+  .background-icons li:nth-child(12) {
+    left: 55%;
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+    background:transparent;
+  }
+  
+  .background-icons li:nth-child(13) {
+    left: 65%;
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+  }
+  
+  @-webkit-keyframes square {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity:0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+      -webkit-transform: translateY(-700px) rotate(600deg);
+              transform: translateY(-700px) rotate(600deg);
+      opacity:1;
+    }
+  }
+  @keyframes square {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity:0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+      -webkit-transform: translateY(-700px) rotate(600deg);
+              transform: translateY(-700px) rotate(600deg);
+      opacity:0;
+    }
+  }
+
 
 @media screen and (max-width: 780px) {
     button {
@@ -311,7 +466,7 @@ header p {
         height: 4.6rem;
         padding: 1.2rem;
         background-color: var(--icon-background);
-        border-radius: 50%;
+        border-radius: 50rem;
         margin: 1.3rem auto 1.3rem auto;
         display: flex;
         justify-content: center;
@@ -342,3 +497,4 @@ header p {
         padding: 1rem;
     }
 }
+

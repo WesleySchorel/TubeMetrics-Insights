@@ -9,7 +9,7 @@ A passion project in which I display interesting statistics from youtube on a sm
 * Sources
 
 ## ℹ️ Description
-N/A
+A small website that shows you awesome statistics from YouTube.
 
 ## 🖥️ Usage
 N/A
@@ -20,7 +20,8 @@ The techniques used in this project are HTML, CSS and JS
 ## 📥 Installation
 N/A
 
-## 🌍 Sources
+## 🌍 Resources
+* Inspiration - Neal Agarwal
 * YouTube - https://www.youtube.com/
 * Icons - https://www.svgrepo.com/collection/minimal-ui-icons/
 
